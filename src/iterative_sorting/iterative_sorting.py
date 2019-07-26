@@ -21,7 +21,7 @@ def selection_sort( arr ):
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
     passes = 0
-    while(passes <= len(arr)):
+    while(passes < len(arr)-1):
         for i in range(len(arr)-1) :
             if(arr[i] > arr[i+1]):
                 arr[i], arr[i+1] = arr[i+1],arr[i]
@@ -40,4 +40,5 @@ def count_sort( arr, maximum=-1 ):
 
 
 if __name__ == "__main__":
+    print(bubble_sort([6,5,3,1,8,7,2,4]))
     print(selection_sort([6,5,3,1,8,7,2,4]))
